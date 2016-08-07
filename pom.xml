@@ -31,7 +31,6 @@
     </distributionManagement>
 
     <build>
-        <finalName>ItemBuilder</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
