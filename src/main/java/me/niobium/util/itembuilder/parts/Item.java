@@ -3,6 +3,7 @@ package me.niobium.util.itembuilder.parts;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.material.MaterialData;
 
 import java.util.Arrays;
@@ -13,8 +14,8 @@ import java.util.List;
  */
 public class Item {
 
-    private ItemStack itemStack;
-    private ItemMeta itemMeta;
+    protected ItemStack itemStack;
+    protected ItemMeta itemMeta;
 
     private List<String> lore;
 
@@ -70,6 +71,14 @@ public class Item {
     public String getLore(int pos) {
         if(pos > lore.size()-1) return null;
         return lore.get(pos);
+    }
+
+    public void setOwner(String name) {
+        if(this.itemStack.getType() == Material.SKULL_ITEM) ((SkullMeta) this.itemMeta).setOwner(name);
+    }
+
+    public void setItemStack(ItemStack stack) {
+        this.itemStack = stack;
     }
 
     public ItemStack toItemStack() {

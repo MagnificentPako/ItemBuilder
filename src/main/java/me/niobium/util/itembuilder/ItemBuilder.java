@@ -21,9 +21,4 @@ public class ItemBuilder {
         return buildItem(new ItemStack(Material.STONE), builder);
     }
 
-    public static ItemStack buildHead(ISkullBuilder builder) {
-
-        return null;
-    }
-
 }
