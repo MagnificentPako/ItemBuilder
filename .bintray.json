@@ -9,7 +9,7 @@
 	},
 	"files":
 	[
-	{"includePattern": "target/*.jar", "uploadPattern": "target/*.jar", "matrixParams": {"override": 1}}
+	{"includePattern": "target/(*+).jar", "uploadPattern": "target/$1.jar", "matrixParams": {"override": 1}}
 	],
 	"publish": true
 }
