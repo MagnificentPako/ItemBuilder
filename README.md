@@ -3,12 +3,8 @@
 
 # ItemBuilder
 
----
-
 ## About
 A simple set of classes which let you build items using the "new" lambdas.
-
----
 
 ## Usage
 
@@ -22,6 +18,13 @@ ItemStack itemStack = ItemBuilder.buildItem(item -> {
 ```
 
 ---
+
+```Java
+ItemStack itemStack = ItemBuilder.buildHead(head -> {
+  head.setOwner("laklaklak");
+  head.setDisplayName("Me");
+});
+```
 
 ## How to contribute
 

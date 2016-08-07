@@ -22,4 +22,8 @@ public class Skull extends Item {
         this(new ItemStack(Material.SKULL_ITEM, 1, (byte) 3));
     }
 
+    public void setOwner(String name) {
+        this.itemMeta.setOwner(name);
+    }
+
 }
