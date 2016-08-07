@@ -9,7 +9,7 @@
 	},
 	"files":
 	[
-	{"includePattern": "target/(.*)", "uploadPattern": "/$1"}
+	{"includePattern": "target/ItemBuilder.jar", "uploadPattern": "target/ItemBuilder.jar"}
 	],
 	"publish": true
 }
